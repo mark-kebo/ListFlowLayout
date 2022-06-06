@@ -8,7 +8,7 @@
 import UIKit
 
 /// Basic UICollectionViewCell for working with ListFlowLayout and additional click animation or loading state
-class HighlightedCollectionViewCell: UICollectionViewCell {
+public class HighlightedCollectionViewCell: UICollectionViewCell {
     public enum UICollectionViewCellHighlitedStyle {
         case none, alpha, background(UIColor)
     }
@@ -37,7 +37,7 @@ class HighlightedCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    override var isHighlighted: Bool {
+    public override var isHighlighted: Bool {
         didSet {
             UIView.animate(withDuration: shortAnimationDuration, delay: 0, options: animationOptions, animations: {
                 switch self.highlitedStyle {
@@ -101,7 +101,7 @@ class HighlightedCollectionViewCell: UICollectionViewCell {
         self.addConstraint(xCenterConstraint)
     }
     
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    public override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         let targetSize = CGSize(width: layoutAttributes.frame.width, height: 0)
         layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(targetSize,
                                                                           withHorizontalFittingPriority: isHorizontalResizable ? .fittingSizeLevel : .required,

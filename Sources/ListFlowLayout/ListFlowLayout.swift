@@ -8,7 +8,7 @@
 import UIKit
 
 /// FlowLayout for UICollectionView to represent cells as a list
-final class ListFlowLayout: UICollectionViewFlowLayout {
+final public class ListFlowLayout: UICollectionViewFlowLayout {
     private let cellEdgeInsets: UIEdgeInsets
     private let interitemSpacing: CGFloat
     private let lineSpacing: CGFloat
@@ -51,7 +51,7 @@ final class ListFlowLayout: UICollectionViewFlowLayout {
         sectionInset = cellEdgeInsets
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let layoutAttributesObjects = super.layoutAttributesForElements(in: rect)?.map{ $0.copy() } as? [UICollectionViewLayoutAttributes]
         layoutAttributesObjects?.forEach({ layoutAttributes in
             if layoutAttributes.representedElementCategory == .cell {
@@ -63,7 +63,7 @@ final class ListFlowLayout: UICollectionViewFlowLayout {
         return layoutAttributesObjects
     }
 
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         guard let collectionView = collectionView else {
             fatalError()
         }
