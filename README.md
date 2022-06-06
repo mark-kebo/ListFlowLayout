@@ -1,7 +1,11 @@
 # ListFlowLayout
 [![Swift Version][swift-image]][swift-url]
+![Issues](https://img.shields.io/github/issues/mark-kebo/ListFlowLayout)
+![Forks](https://img.shields.io/github/forks/mark-kebo/ListFlowLayout)
+![Stars](https://img.shields.io/github/stars/mark-kebo/ListFlowLayout)
+![License](https://img.shields.io/github/license/mark-kebo/ListFlowLayout) 
 
-/// FlowLayout for UICollectionView to represent cells as a list with additional click animation or loading state
+FlowLayout for UICollectionView to represent cells as a list with additional click animation or loading state
 
 ## Version
 
