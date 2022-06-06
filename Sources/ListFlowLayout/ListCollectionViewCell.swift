@@ -1,5 +1,5 @@
 //
-//  HighlightedCollectionViewCell.swift
+//  ListCollectionViewCell.swift
 //  
 //
 //  Created by Dmitry Vorozhbicki on 06/06/2022.
@@ -8,7 +8,7 @@
 import UIKit
 
 /// Basic UICollectionViewCell for working with ListFlowLayout and additional click animation or loading state
-open class HighlightedCollectionViewCell: UICollectionViewCell {
+open class ListCollectionViewCell: UICollectionViewCell {
     public enum UICollectionViewCellHighlitedStyle {
         case none, alpha, background(UIColor)
     }
