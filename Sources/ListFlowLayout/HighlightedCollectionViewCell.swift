@@ -23,7 +23,11 @@ open class HighlightedCollectionViewCell: UICollectionViewCell {
     public var highlightedBackgroundColor = UIColor.gray
     
     /// Click animation style
-    public var highlitedStyle: UICollectionViewCellHighlitedStyle = .none
+    public var highlitedStyle: UICollectionViewCellHighlitedStyle = .none {
+        didSet {
+            isHighlighted = false
+        }
+    }
     
     /// Horizontal resizable state
     public var isHorizontalResizable: Bool = false
