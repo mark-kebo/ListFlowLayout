@@ -15,7 +15,7 @@ final public class ListFlowLayout: UICollectionViewFlowLayout {
     
     /// Init
     /// - Parameter cellSideInset: Cell margin
-    init(cellSideInset: CGFloat) {
+    public init(cellSideInset: CGFloat) {
         interitemSpacing = cellSideInset
         lineSpacing = cellSideInset
         self.cellEdgeInsets = UIEdgeInsets(top: cellSideInset, left: cellSideInset,
@@ -29,7 +29,7 @@ final public class ListFlowLayout: UICollectionViewFlowLayout {
     ///   - cellEdgeInsets: Cell margin
     ///   - interitemSpacing: Margins between cells
     ///   - lineSpacing: Line spacing
-    init(cellEdgeInsets: UIEdgeInsets,
+    public init(cellEdgeInsets: UIEdgeInsets,
          interitemSpacing: CGFloat,
          lineSpacing: CGFloat) {
         self.interitemSpacing = interitemSpacing

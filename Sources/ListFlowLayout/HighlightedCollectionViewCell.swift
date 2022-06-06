@@ -8,7 +8,7 @@
 import UIKit
 
 /// Basic UICollectionViewCell for working with ListFlowLayout and additional click animation or loading state
-public class HighlightedCollectionViewCell: UICollectionViewCell {
+open class HighlightedCollectionViewCell: UICollectionViewCell {
     public enum UICollectionViewCellHighlitedStyle {
         case none, alpha, background(UIColor)
     }
