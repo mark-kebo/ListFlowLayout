@@ -55,7 +55,7 @@ After successfully retrieved the package and added it to your project, just impo
 ``` swift
 import ListFlowLayout
 
-final class YourCollectionViewCell: HighlightedCollectionViewCell {
+final class YourCollectionViewCell: ListCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.highlitedStyle = .background(UIColor.lightGray)
